@@ -1,4 +1,4 @@
-import './style.css'
+// JavaScript entry point for portfolio functionality
 
 // 1. Theme Toggle (Minimalist implementation)
 const themeToggle = document.querySelector('.theme-toggle');
@@ -70,4 +70,4 @@ window.addEventListener('load', () => {
 
 window.addEventListener('scroll', revealOnScroll);
 
-console.log('Portfolio Abdoulaye Diome initialisé avec succès 💻');
+console.log('Portfolio Elhadji Fallou Sall initialisé avec succès 💻');

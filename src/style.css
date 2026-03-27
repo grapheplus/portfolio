@@ -546,6 +546,26 @@ body {
 }
 
 /* Project Actions refinement */
+.project-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+}
+
+.project-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.project-card-new:hover .project-card-img {
+  transform: scale(1.05);
+}
+
 .project-actions {
   display: flex;
   gap: 1.5rem;
