@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: './', // Utilisation de chemins relatifs pour GitHub Pages
+  base: '/portfolio/', // Assure que les chemins sont corrects sur GitHub Pages (repo portfolio)
 })
