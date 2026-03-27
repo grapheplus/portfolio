@@ -335,7 +335,13 @@
         <!-- Right: Form -->
         <div class="contact-form-box">
           <h3 class="serif">Envoyez-moi un message</h3>
-          <form class="modern-form" action="https://formspree.io/f/xayzkvny" method="POST">
+          <form class="modern-form" action="https://formsubmit.co/fallousall821@gmail.com" method="POST">
+            <!-- Honeypot -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable Captcha (Optional, for smoother UX) -->
+            <input type="hidden" name="_captcha" value="false">
+            <!-- Success Page -->
+            <input type="hidden" name="_next" value="https://grapheplus.github.io/portfolio/">
             <div class="form-group">
               <label>Nom complet *</label>
               <input type="text" name="name" placeholder="Votre nom" required>
