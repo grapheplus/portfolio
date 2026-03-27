@@ -71,3 +71,26 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', revealOnScroll);
 
 console.log('Portfolio Elhadji Fallou Sall initialisé avec succès 💻');
+
+// 5. Lightbox functionality
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+const lightboxClose = document.querySelector('.lightbox-close');
+
+document.querySelectorAll('.clickable-img').forEach(img => {
+  img.addEventListener('click', () => {
+    lightbox.style.display = 'block';
+    lightboxImg.src = img.src;
+  });
+});
+
+lightboxClose.addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+// Close lightbox when clicking outside the image
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) {
+    lightbox.style.display = 'none';
+  }
+});
